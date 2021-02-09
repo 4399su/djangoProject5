@@ -22,11 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'lt=880ov_=p)n78d67h1m6anpi6r+!fxbrx+jrpxr)dk#n26m0'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
+# SECURITY WARNING: don't run.log with debug turned on in production!
+DEBUG = False
+ALLOWED_HOSTS = ['47.94.37.208']
 
 # Application definition
 
@@ -125,4 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static/image'),
+    os.path.join(BASE_DIR, 'static/css'),
+    os.path.join(BASE_DIR, 'static/js'),
 ]

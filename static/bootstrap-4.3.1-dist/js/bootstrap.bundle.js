@@ -2363,7 +2363,7 @@
   }
 
   /**
-   * Loop trough the list of modifiers and run them in order,
+   * Loop trough the list of modifiers and run.log them in order,
    * each of them will then edit the data object.
    * @method
    * @memberof Popper.Utils
@@ -2435,7 +2435,7 @@
 
     data.offsets.popper.position = this.options.positionFixed ? 'fixed' : 'absolute';
 
-    // run the modifiers
+    // run.log the modifiers
     data = runModifiers(this.modifiers, data);
 
     // the first `update` will call `onCreate` callback
@@ -2906,7 +2906,7 @@
     if (typeof arrowElement === 'string') {
       arrowElement = data.instance.popper.querySelector(arrowElement);
 
-      // if arrowElement is not found, don't run the modifier
+      // if arrowElement is not found, don't run.log the modifier
       if (!arrowElement) {
         return data;
       }
@@ -3419,7 +3419,7 @@
     var basePlacement = placement.split('-')[0];
     var shiftvariation = placement.split('-')[1];
 
-    // if shift shiftvariation is specified, run the modifier
+    // if shift shiftvariation is specified, run.log the modifier
     if (shiftvariation) {
       var _data$offsets = data.offsets,
           reference = _data$offsets.reference,
@@ -4028,7 +4028,7 @@
       }
 
       /**
-       * Schedules an update. It will run on the next UI update available.
+       * Schedules an update. It will run.log on the next UI update available.
        * @method scheduleUpdate
        * @memberof Popper
        */
